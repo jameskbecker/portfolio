@@ -85,7 +85,7 @@ export default function IndexPage() {
 
       <section
         id="skills"
-        className="relative flex h-full flex-col items-center justify-center gap-8 self-center pb-8 pt-6 md:py-10"
+        className="relative hidden h-full flex-col items-center justify-center gap-8 self-center pb-8 pt-6 md:flex md:py-10"
       >
         <div className="container flex grow flex-col items-center gap-16">
           <MotionHeading text="Technical Skills" />
