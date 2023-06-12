@@ -70,7 +70,7 @@ export const HeroInfo = () => {
         className="shrink grow-0 items-center overflow-hidden border-solid px-0.5 py-1 text-4xl font-extrabold tracking-tighter md:whitespace-nowrap md:text-5xl"
       >
         <span>crafting </span>
-        <span className="text-secondary-foreground">exceptional</span>{" "}
+        <span className="text-secondary-foreground">exceptional </span>
         <span className="">web experiences</span>
         <span className="text-secondary-foreground">.</span>
       </motion.h1>
