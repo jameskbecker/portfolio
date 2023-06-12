@@ -100,8 +100,8 @@ export default function IndexPage() {
       >
         <MotionHeading text="Contact" />
 
-        <div className="flex grow flex-col items-center justify-evenly">
-          <h2 className="text-2xl dark:text-neutral-400">
+        <div className="container flex grow flex-col items-center justify-evenly">
+          <h2 className="text-center text-2xl dark:text-neutral-400">
             <span>
               Working on a <strong>project</strong>? <span>I&apos;d </span>
               <strong>love</strong> to find out how I can help bring your{" "}
@@ -109,7 +109,7 @@ export default function IndexPage() {
             </span>
           </h2>
 
-          <div className="flex items-center gap-16">
+          <div className="grid grid-cols-2 items-center gap-16 md:flex md:flex-row">
             <SocialLink
               label="Github"
               icon={<Icons.github />}
@@ -136,7 +136,7 @@ export default function IndexPage() {
             />
           </div>
         </div>
-        <Icons.blob className="absolute bottom-0 left-0" />
+        <Icons.blob className="absolute bottom-0 left-0 hidden lg:inline" />
       </section>
     </>
   )
