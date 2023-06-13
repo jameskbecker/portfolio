@@ -82,8 +82,8 @@ export const HeroInfo = () => {
         className="flex flex-col items-center justify-start gap-8 overflow-hidden"
       >
         <p className="max-w-[700px] text-lg text-muted-foreground">
-          Hey name is James! I’ve been having an awesome experience working with
-          web technologies for the past 5 years.
+          Hey, my name is James! I’ve been having an awesome experience working
+          with web technologies for the past 5 years.
         </p>
         <motion.a
           href={siteConfig.links.heroCta}
