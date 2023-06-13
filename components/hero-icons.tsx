@@ -14,11 +14,11 @@ const getRandomPosition = () => {
 export const HeroIcons = () => (
   <>
     <motion.div
-      className="absolute right-8 top-8"
-      animate={{
-        top: 32 + getRandomPosition(),
-        right: 32 + getRandomPosition(),
-      }}
+      className="absolute right-4 top-4 sm:right-8 sm:top-8"
+      // animate={{
+      //   top: 32 + getRandomPosition(),
+      //   right: 32 + getRandomPosition(),
+      // }}
       transition={{
         repeat: Infinity,
         repeatType: "reverse",
@@ -26,14 +26,14 @@ export const HeroIcons = () => (
         ease: "easeInOut",
       }}
     >
-      <Icons.pill />
+      <Icons.pill className="h-16 md:h-24 lg:h-28" />
     </motion.div>
     <motion.div
-      className="absolute left-8 top-8"
-      animate={{
-        top: 32 + getRandomPosition(),
-        left: 32 + getRandomPosition(),
-      }}
+      className="absolute left-4 top-4 sm:left-8 sm:top-8"
+      // animate={{
+      //   top: 32 + getRandomPosition(),
+      //   left: 32 + getRandomPosition(),
+      // }}
       transition={{
         repeat: Infinity,
         repeatType: "reverse",
@@ -41,14 +41,14 @@ export const HeroIcons = () => (
         ease: "easeInOut",
       }}
     >
-      <Icons.scratch />
+      <Icons.scratch className="h-16 md:h-24 lg:h-28" />
     </motion.div>
     <motion.div
-      className="absolute bottom-8 right-8"
-      animate={{
-        bottom: 32 + getRandomPosition(),
-        right: 32 + getRandomPosition(),
-      }}
+      className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8"
+      // animate={{
+      //   bottom: 32 + getRandomPosition(),
+      //   right: 32 + getRandomPosition(),
+      // }}
       transition={{
         repeat: Infinity,
         repeatType: "reverse",
@@ -56,14 +56,14 @@ export const HeroIcons = () => (
         ease: "easeInOut",
       }}
     >
-      <Icons.squiggle />
+      <Icons.squiggle className="h-16 md:h-24 lg:h-28" />
     </motion.div>
     <motion.div
-      className="absolute bottom-8 left-8"
-      animate={{
-        bottom: 32 + getRandomPosition(),
-        left: 32 + getRandomPosition(),
-      }}
+      className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8"
+      // animate={{
+      //   bottom: 32 + getRandomPosition(),
+      //   left: 32 + getRandomPosition(),
+      // }}
       transition={{
         repeat: Infinity,
         repeatType: "reverse",
@@ -71,7 +71,7 @@ export const HeroIcons = () => (
         ease: "easeInOut",
       }}
     >
-      <Icons.star />
+      <Icons.star className="h-11 lg:h-12" />
     </motion.div>
   </>
 )
