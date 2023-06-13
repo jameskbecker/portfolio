@@ -5,7 +5,7 @@ export const revealVariants: Variants = {
   visible: {
     width: "auto",
     transition: {
-      duration: 2,
+      duration: 1.5,
       stagger: 0.25,
     },
   },
@@ -16,7 +16,7 @@ export const revealVariants: Variants = {
       "4px solid var(--secondary-foreground)",
     ],
     transition: {
-      duration: 1.25,
+      duration: 0.75,
       times: [0, 0.45, 1],
       repeat: Infinity,
     },
