@@ -1,3 +1,7 @@
+import kupmImage from "@/public/kupm.png"
+import nftAutoImage from "@/public/nft-automation.png"
+import prosperImage from "@/public/prosperaio.png"
+
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
@@ -88,14 +92,14 @@ export const siteConfig = {
     {
       id: "kupm",
       name: "KU Project Manager",
-      image: "/kupm.png",
+      image: kupmImage,
       description: `A CRUD web application to help students manage their university work. This was made as my final year project as part of my university coursework. It uses React and is written in TypeScript.`,
       skills: ["React", "Figma", "Express.js", "Typescript", "MySQL"],
     },
     {
       id: "nft",
       name: "NFT Automation",
-      image: "/nft-automation.png",
+      image: nftAutoImage,
       description: `This project involved creating a React front end based on a provided design. It needed to be done in a way where it was ready to be plugged into the back end. The project involved several complex tasks such as creating dynamic charts and performant lists.`,
       skills: [
         "React",
@@ -109,7 +113,7 @@ export const siteConfig = {
     {
       id: "propseraio",
       name: "ProsperAIO",
-      image: "/prosperaio.png",
+      image: prosperImage,
       description: `This was my first big side project. It played a key role in developing both my initial knowledge and passion for web development. It taught me a lot about how the web works and involved making requests to various servers. Working on this project also gave me a thorough understanding of JavaScript, my core programming language.`,
       skills: [
         "React",

@@ -1,11 +1,11 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 
 type Project = {
   id: string
   name: string
-  image: string
+  image: StaticImageData
   description: string
   skills: string[]
 }
@@ -36,6 +36,7 @@ export const ProjectTabs = ({ data }: ProjectTabsProps) => (
         <TabsContent value={project.id} className="flex flex-col gap-4">
           <div className="relative flex h-96 grow flex-col gap-4 overflow-hidden">
             <Image
+              placeholder="blur"
               src={project.image}
               alt="Photo of project"
               fill

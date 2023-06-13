@@ -1,4 +1,5 @@
 import Image from "next/image"
+import portrait from "@/public/portrait.jpg"
 
 import { siteConfig } from "@/config/site"
 import { HeroIcons } from "@/components/hero-icons"
@@ -30,7 +31,8 @@ export default function IndexPage() {
           <div className="relative flex-1">
             <div className="relative h-80 w-full overflow-hidden rounded-2xl border-2 border-purple-400 md:h-96 lg:h-full">
               <Image
-                src="/portrait.jpg"
+                placeholder="blur"
+                src={portrait}
                 alt="Photo of James"
                 fill
                 draggable={false}
