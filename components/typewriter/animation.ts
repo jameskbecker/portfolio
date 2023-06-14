@@ -9,11 +9,7 @@ export const revealVariants: Variants = {
 
 export const typingVariants: Variants = {
   active: {
-    borderRight: [
-      "4px solid var(--secondary-foreground)",
-      "4px solid transparent",
-      "4px solid var(--secondary-foreground)",
-    ],
+    opacity: [0, 100, 0],
     transition: {
       duration: 0.75,
       times: [0, 0.45, 1],

@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-import { motion, useAnimationControls } from "framer-motion"
+import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 
@@ -51,7 +50,7 @@ export const Typewriter = ({ content }: TypewriterProps) => {
         )
       })}
       <motion.span
-        className="box-border h-10 md:h-12"
+        className="box-border h-10 border-2 border-secondary-foreground md:h-12"
         variants={typingVariants}
         initial="active"
         animate="active"
