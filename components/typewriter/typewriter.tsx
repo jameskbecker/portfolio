@@ -16,7 +16,7 @@ export const Typewriter = ({ content }: TypewriterProps) => {
   let characterDelay = 0
 
   return (
-    <h1 className="flex flex-initial flex-wrap items-center justify-center overflow-hidden whitespace-pre-wrap border-solid px-0.5 py-1 text-4xl font-extrabold tracking-tight md:text-5xl">
+    <h1 className="flex flex-initial flex-wrap items-center justify-center overflow-hidden whitespace-pre-wrap border-solid px-0.5 text-4xl font-extrabold tracking-tight md:text-5xl">
       {content.map((value: Content, i: number) => {
         const characters = value.text.split("")
 
