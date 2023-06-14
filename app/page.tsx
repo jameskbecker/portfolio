@@ -102,7 +102,7 @@ export default function IndexPage() {
       >
         <MotionHeading text="Contact" />
 
-        <div className="container flex grow flex-col items-center justify-evenly">
+        <div className="container flex grow flex-col items-center gap-16 sm:justify-evenly">
           <h2 className="text-center text-2xl dark:text-neutral-400">
             <span>
               Working on a <strong>project</strong>? <span>I&apos;d </span>
