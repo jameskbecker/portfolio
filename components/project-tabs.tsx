@@ -1,5 +1,7 @@
 import Image, { StaticImageData } from "next/image"
 
+import { siteConfig } from "@/config/site"
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 
 type Project = {
@@ -30,6 +32,15 @@ export const ProjectTabs = ({ data }: ProjectTabsProps) => (
           {project.name}
         </TabsTrigger>
       ))}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        draggable={false}
+        href={siteConfig.links.github}
+        className="py-4 text-lg text-secondary-foreground underline opacity-80 transition-opacity duration-300 hover:opacity-100 md:py-8 md:text-xl"
+      >
+        See other open-source projects
+      </a>
     </TabsList>
     <div className="relative flex-1 flex-col justify-start">
       {data.map((project) => (

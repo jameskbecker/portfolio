@@ -115,25 +115,25 @@ export default function IndexPage() {
             <SocialLink
               label="Github"
               icon={<Icons.github />}
-              href="https://github.com/jameskbecker"
+              href={siteConfig.links.github}
               delay={0}
             />
             <SocialLink
               label="Discord"
               icon={<Icons.discord />}
-              href="https://www.discord.com/users/442333264364175361"
+              href={siteConfig.links.discord}
               delay={0.25}
             />
             <SocialLink
               label="LinkedIn"
               icon={<Icons.linkedIn />}
-              href="https://www.linkedin.com/in/jameskbecker/"
+              href={siteConfig.links.linkedIn}
               delay={0.5}
             />
             <SocialLink
               label="Email"
               icon={<Icons.envelope />}
-              href="mailto:work@jameskbecker.com"
+              href={siteConfig.links.email}
               delay={0.75}
             />
           </div>

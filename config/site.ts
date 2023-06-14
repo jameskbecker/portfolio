@@ -28,6 +28,10 @@ export const siteConfig = {
   ],
   links: {
     heroCta: "#showcase",
+    github: "https://github.com/jameskbecker",
+    discord: "https://www.discord.com/users/442333264364175361",
+    linkedIn: "https://www.linkedin.com/in/jameskbecker/",
+    email: "mailto:work@jameskbecker.com",
   },
   skills: [
     {
