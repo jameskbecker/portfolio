@@ -3,18 +3,14 @@
 import { useEffect } from "react"
 import { appearVariants } from "@/animations/appear"
 import { liftVariants } from "@/animations/lift"
-import { revealVariants } from "@/animations/reveal"
 import { Variants, motion, useAnimationControls } from "framer-motion"
 
 import { siteConfig } from "@/config/site"
 
+import { Typewriter } from "./typewriter/typewriter"
 import { buttonVariants } from "./ui/button"
 
 export const HeroInfo = () => {
-  const statement = useAnimationControls()
-  const start = useAnimationControls()
-  const middle = useAnimationControls()
-  const end = useAnimationControls()
   const subControls = useAnimationControls()
 
   const variants: Variants = {
@@ -45,13 +41,11 @@ export const HeroInfo = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      start.start("blink")
-      await start.start("visible")
       await subControls.start("visible")
     }
 
     sequence()
-  }, [start, subControls])
+  }, [subControls])
 
   return (
     <div className="container flex h-full select-none flex-col items-center justify-center gap-8 self-center overflow-hidden text-center">
@@ -63,18 +57,14 @@ export const HeroInfo = () => {
       >
         A Fullstack Engineer specialising in frontend and
       </motion.p>
-      <motion.h1
-        variants={revealVariants}
-        initial="hidden"
-        animate={start}
-        className="shrink grow-0 items-center overflow-hidden border-solid px-0.5 py-1 text-4xl font-extrabold tracking-tighter md:whitespace-nowrap md:text-5xl"
-      >
-        <span>crafting </span>
-        <span className="text-secondary-foreground">exceptional </span>
-        <span className="">web experiences</span>
-        <span className="text-secondary-foreground">.</span>
-      </motion.h1>
-
+      <Typewriter
+        content={[
+          { text: "crafting " },
+          { text: "exceptional", emphasis: true },
+          { text: " web experiences" },
+          { text: ".", emphasis: true },
+        ]}
+      />
       <motion.div
         variants={appearVariants}
         initial="hidden"
