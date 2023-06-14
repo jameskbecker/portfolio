@@ -51,7 +51,7 @@ export const Typewriter = ({ content }: TypewriterProps) => {
         )
       })}
       <motion.span
-        className="box-border h-1/2 md:h-full"
+        className="box-border h-10 md:h-12"
         variants={typingVariants}
         initial="active"
         animate="active"
