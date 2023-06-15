@@ -29,14 +29,14 @@ export default function IndexPage() {
         <MotionHeading text="About me" />
         <div className="container flex grow flex-col gap-16 lg:flex-row">
           <div className="relative flex-1">
-            <div className="relative h-80 w-full overflow-hidden rounded-2xl border-2 border-purple-400 bg-[#444444]  md:h-96 lg:h-full">
+            <div className="relative h-96 w-full overflow-hidden rounded-2xl border-2 border-purple-400 bg-[#444444] lg:h-full">
               <Image
                 placeholder="blur"
                 src={portrait}
                 alt="Photo of James"
                 fill
                 draggable={false}
-                className="select-none border-0 object-cover grayscale md:object-contain lg:object-cover lg:object-top"
+                className="select-none border-0 object-cover object-top grayscale md:object-contain md:object-center lg:object-cover lg:object-top"
               />
             </div>
             <Icons.bean className="absolute bottom-[-32px] left-[-32px]" />
