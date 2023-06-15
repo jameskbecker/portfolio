@@ -7,7 +7,7 @@ import { HeroInfo } from '@/components/hero-info';
 import { Icons } from '@/components/icons';
 import { MotionHeading } from '@/components/motion-heading';
 import { MotionSwirlIcon } from '@/components/motion-swirl-icon';
-import { ProjectTabs } from '@/components/project-tabs';
+import { ProjectTabs } from '@/components/project-tabs/ProjectTabs';
 import { SkillsTabs } from '@/components/skills-tabs';
 import { SocialLink } from '@/components/social-link';
 
