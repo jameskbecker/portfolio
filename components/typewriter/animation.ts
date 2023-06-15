@@ -1,11 +1,11 @@
-import { Variants } from "framer-motion"
+import { Variants } from 'framer-motion';
 
 export const revealVariants: Variants = {
   hidden: { width: 0 },
   visible: {
-    width: "auto",
+    width: 'auto',
   },
-}
+};
 
 export const typingVariants: Variants = {
   active: {
@@ -16,4 +16,4 @@ export const typingVariants: Variants = {
       repeat: Infinity,
     },
   },
-}
+};

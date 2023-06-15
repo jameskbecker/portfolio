@@ -1,13 +1,13 @@
-"use client"
+'use client';
 
-import { appearVariants } from "@/animations/appear"
-import { motion } from "framer-motion"
+import { appearVariants } from '@/animations/appear';
+import { motion } from 'framer-motion';
 
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
+import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
 
-import { Typewriter } from "./typewriter/typewriter"
-import { buttonVariants } from "./ui/button"
+import { Typewriter } from './typewriter/typewriter';
+import { buttonVariants } from './ui/button';
 
 export const HeroInfo = () => {
   return (
@@ -16,24 +16,24 @@ export const HeroInfo = () => {
         variants={appearVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.3, ease: "easeIn", delay: 2 }}
+        transition={{ duration: 0.3, ease: 'easeIn', delay: 2 }}
         className="max-w-[700px] text-base text-muted-foreground"
       >
         A Fullstack Engineer specialising in frontend and
       </motion.p>
       <Typewriter
         content={[
-          { text: "crafting " },
-          { text: "exceptional", emphasis: true },
-          { text: " web experiences" },
-          { text: ".", emphasis: true },
+          { text: 'crafting ' },
+          { text: 'exceptional', emphasis: true },
+          { text: ' web experiences' },
+          { text: '.', emphasis: true },
         ]}
       />
       <motion.div
         variants={appearVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.3, ease: "easeIn", delay: 2.25 }}
+        transition={{ duration: 0.3, ease: 'easeIn', delay: 2.25 }}
         className="container flex flex-col items-center justify-start gap-8 overflow-hidden"
       >
         <p className="max-w-[700px] text-lg text-muted-foreground">
@@ -45,13 +45,13 @@ export const HeroInfo = () => {
           rel="noreferrer"
           draggable={false}
           className={cn(
-            "transition-transform duration-300 hover:-translate-y-1 active:translate-y-0",
-            buttonVariants({ size: "lg" })
+            'transition-transform duration-300 hover:-translate-y-1 active:translate-y-0',
+            buttonVariants({ size: 'lg' })
           )}
         >
           Check out some of my Projects
         </a>
       </motion.div>
     </div>
-  )
-}
+  );
+};

@@ -1,19 +1,19 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from 'next/image';
 
-import { siteConfig } from "@/config/site"
+import { siteConfig } from '@/config/site';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
 type Project = {
-  id: string
-  name: string
-  image: StaticImageData
-  description: string
-  skills: string[]
-}
+  id: string;
+  name: string;
+  image: StaticImageData;
+  description: string;
+  skills: string[];
+};
 
 interface ProjectTabsProps {
-  data: Project[]
+  data: Project[];
 }
 
 export const ProjectTabs = ({ data }: ProjectTabsProps) => (
@@ -71,4 +71,4 @@ export const ProjectTabs = ({ data }: ProjectTabsProps) => (
       ))}
     </div>
   </Tabs>
-)
+);

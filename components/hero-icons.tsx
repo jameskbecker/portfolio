@@ -1,15 +1,15 @@
-"use client"
+'use client';
 
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
-import { Icons } from "./icons"
+import { Icons } from './icons';
 
-const minPerimeter = 4
-const maxPerimeter = 16
+const minPerimeter = 4;
+const maxPerimeter = 16;
 
 const getRandomPosition = () => {
-  return Math.random() * (2 * maxPerimeter - 2 * minPerimeter) + minPerimeter
-}
+  return Math.random() * (2 * maxPerimeter - 2 * minPerimeter) + minPerimeter;
+};
 
 export const HeroIcons = () => (
   <>
@@ -21,9 +21,9 @@ export const HeroIcons = () => (
       // }}
       transition={{
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 4,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       }}
     >
       <Icons.pill className="h-16 md:h-24 lg:h-28" />
@@ -36,9 +36,9 @@ export const HeroIcons = () => (
       // }}
       transition={{
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 4,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       }}
     >
       <Icons.scratch className="h-16 md:h-24 lg:h-28" />
@@ -51,9 +51,9 @@ export const HeroIcons = () => (
       // }}
       transition={{
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 4,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       }}
     >
       <Icons.squiggle className="h-16 md:h-24 lg:h-28" />
@@ -66,12 +66,12 @@ export const HeroIcons = () => (
       // }}
       transition={{
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 4,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       }}
     >
       <Icons.star className="h-11 lg:h-12" />
     </motion.div>
   </>
-)
+);

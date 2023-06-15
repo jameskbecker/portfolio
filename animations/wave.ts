@@ -1,4 +1,4 @@
-import { Variants } from "framer-motion"
+import { Variants } from 'framer-motion';
 
 export const waveVariants = (delay: number): Variants => ({
   hidden: { opacity: 0.9 },
@@ -9,4 +9,4 @@ export const waveVariants = (delay: number): Variants => ({
   },
   hover: { opacity: 1 },
   exit: { y: 0 },
-})
+});

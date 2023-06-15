@@ -1,12 +1,12 @@
-import "@/styles/globals.css"
-import { Metadata } from "next"
+import '@/styles/globals.css';
+import { Metadata } from 'next';
 
-import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+import { siteConfig } from '@/config/site';
+import { fontSans } from '@/lib/fonts';
+import { cn } from '@/lib/utils';
+import { SiteHeader } from '@/components/site-header';
+import { TailwindIndicator } from '@/components/tailwind-indicator';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: {
@@ -14,20 +14,20 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  viewport: "initial-scale=1.0, width=device-width, minimum-scale=1.0",
+  viewport: 'initial-scale=1.0, width=device-width, minimum-scale=1.0',
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   icons: {
-    icon: "/favicon.ico?v=2",
-    shortcut: "/favicon-16x16.png?v=2",
-    apple: "/apple-touch-icon.png?v=2",
+    icon: '/favicon.ico?v=2',
+    shortcut: '/favicon-16x16.png?v=2',
+    apple: '/apple-touch-icon.png?v=2',
   },
-}
+};
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            'min-h-screen bg-background font-sans antialiased',
             fontSans.variable
           )}
         >
@@ -53,5 +53,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  )
+  );
 }

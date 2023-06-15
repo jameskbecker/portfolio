@@ -1,15 +1,15 @@
-import Image from "next/image"
-import portrait from "@/public/Becker_James.jpg"
+import Image from 'next/image';
+import portrait from '@/public/Becker_James.jpg';
 
-import { siteConfig } from "@/config/site"
-import { HeroIcons } from "@/components/hero-icons"
-import { HeroInfo } from "@/components/hero-info"
-import { Icons } from "@/components/icons"
-import { MotionHeading } from "@/components/motion-heading"
-import { MotionSwirlIcon } from "@/components/motion-swirl-icon"
-import { ProjectTabs } from "@/components/project-tabs"
-import { SkillsTabs } from "@/components/skills-tabs"
-import { SocialLink } from "@/components/social-link"
+import { siteConfig } from '@/config/site';
+import { HeroIcons } from '@/components/hero-icons';
+import { HeroInfo } from '@/components/hero-info';
+import { Icons } from '@/components/icons';
+import { MotionHeading } from '@/components/motion-heading';
+import { MotionSwirlIcon } from '@/components/motion-swirl-icon';
+import { ProjectTabs } from '@/components/project-tabs';
+import { SkillsTabs } from '@/components/skills-tabs';
+import { SocialLink } from '@/components/social-link';
 
 export default function IndexPage() {
   return (
@@ -106,7 +106,7 @@ export default function IndexPage() {
           <h2 className="text-center text-2xl dark:text-neutral-400">
             <span>
               Working on a <strong>project</strong>? <span>I&apos;d </span>
-              <strong>love</strong> to find out how I can help bring your{" "}
+              <strong>love</strong> to find out how I can help bring your{' '}
               <strong>vision</strong> to <strong>life</strong>!
             </span>
           </h2>
@@ -141,5 +141,5 @@ export default function IndexPage() {
         <Icons.blob className="absolute bottom-0 left-0 hidden lg:inline" />
       </section>
     </>
-  )
+  );
 }

@@ -4,9 +4,9 @@ import {
   SunMedium,
   Twitter,
   type Icon as LucideIcon,
-} from "lucide-react"
+} from 'lucide-react';
 
-export type Icon = LucideIcon
+export type Icon = LucideIcon;
 
 export const Icons = {
   sun: (props: LucideProps) => <SunMedium strokeWidth={1.5} {...props} />,
@@ -34,7 +34,7 @@ export const Icons = {
         x="0"
         y="0"
         maskUnits="userSpaceOnUse"
-        style={{ maskType: "alpha" }}
+        style={{ maskType: 'alpha' }}
       >
         <path
           fill="#000"
@@ -53,7 +53,7 @@ export const Icons = {
           x="53"
           y="12"
           maskUnits="userSpaceOnUse"
-          style={{ maskType: "alpha" }}
+          style={{ maskType: 'alpha' }}
         >
           <path
             fill="#fff"
@@ -132,7 +132,7 @@ export const Icons = {
         />
         <mask
           id="mask0_22_636"
-          style={{ maskType: "alpha" }}
+          style={{ maskType: 'alpha' }}
           maskUnits="userSpaceOnUse"
           x="15"
           y="4"
@@ -179,7 +179,7 @@ export const Icons = {
         />
         <mask
           id="mask0_22_700"
-          style={{ maskType: "alpha" }}
+          style={{ maskType: 'alpha' }}
           maskUnits="userSpaceOnUse"
           x="-180"
           y="0"
@@ -288,6 +288,6 @@ export const Icons = {
       />
     </svg>
   ),
-}
+};
 
-export const ClientIcons = {}
+export const ClientIcons = {};

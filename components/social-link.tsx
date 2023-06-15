@@ -1,24 +1,24 @@
-"use client"
+'use client';
 
-import { useEffect, useRef } from "react"
-import { waveVariants } from "@/animations/wave"
-import { motion, useAnimationControls, useInView } from "framer-motion"
+import { useEffect, useRef } from 'react';
+import { waveVariants } from '@/animations/wave';
+import { motion, useAnimationControls, useInView } from 'framer-motion';
 
 interface SocialLinkProps {
-  label: string
-  href: string
-  icon: any
-  delay: number
+  label: string;
+  href: string;
+  icon: any;
+  delay: number;
 }
 
 export const SocialLink = (props: SocialLinkProps) => {
-  const ref = useRef(null)
-  const inView = useInView(ref)
-  const controls = useAnimationControls()
+  const ref = useRef(null);
+  const inView = useInView(ref);
+  const controls = useAnimationControls();
 
   useEffect(() => {
-    if (inView) controls.start("visible")
-  }, [inView, controls])
+    if (inView) controls.start('visible');
+  }, [inView, controls]);
 
   return (
     <motion.a
@@ -34,5 +34,5 @@ export const SocialLink = (props: SocialLinkProps) => {
       {props.icon}
       <label className="text-sm">{props.label}</label>
     </motion.a>
-  )
-}
+  );
+};

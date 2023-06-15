@@ -1,21 +1,21 @@
-"use client"
+'use client';
 
-import { useEffect, useRef } from "react"
-import { appearVariants } from "@/animations/appear"
-import { motion, useAnimationControls, useInView } from "framer-motion"
+import { useEffect, useRef } from 'react';
+import { appearVariants } from '@/animations/appear';
+import { motion, useAnimationControls, useInView } from 'framer-motion';
 
 interface MotionHeadingProps {
-  text: string
+  text: string;
 }
 
 export const MotionHeading = ({ text }: MotionHeadingProps) => {
-  const ref = useRef(null)
-  const inView = useInView(ref)
-  const controls = useAnimationControls()
+  const ref = useRef(null);
+  const inView = useInView(ref);
+  const controls = useAnimationControls();
 
   useEffect(() => {
-    if (inView) controls.start("visible")
-  }, [controls, inView])
+    if (inView) controls.start('visible');
+  }, [controls, inView]);
 
   return (
     <motion.h1
@@ -27,5 +27,5 @@ export const MotionHeading = ({ text }: MotionHeadingProps) => {
     >
       {text}
     </motion.h1>
-  )
-}
+  );
+};

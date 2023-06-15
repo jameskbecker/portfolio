@@ -1,6 +1,6 @@
-import { siteConfig } from "@/config/site"
+import { siteConfig } from '@/config/site';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
 export const SkillsTabs = () => (
   <Tabs
@@ -33,4 +33,4 @@ export const SkillsTabs = () => (
       ))}
     </div>
   </Tabs>
-)
+);

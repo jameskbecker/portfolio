@@ -1,34 +1,34 @@
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
-import { cn } from "@/lib/utils"
+import { cn } from '@/lib/utils';
 
-import { revealVariants, typingVariants } from "./animation"
+import { revealVariants, typingVariants } from './animation';
 
-type Content = { text: string; emphasis?: boolean }
+type Content = { text: string; emphasis?: boolean };
 
 interface TypewriterProps {
-  content: Content[]
-  speed?: number
-  delay?: number
+  content: Content[];
+  speed?: number;
+  delay?: number;
 }
 
 export const Typewriter = ({ content }: TypewriterProps) => {
-  let characterDelay = 0
+  let characterDelay = 0;
 
   return (
     <h1 className="flex flex-initial flex-wrap items-center justify-center overflow-hidden whitespace-pre-wrap border-solid px-0.5 text-4xl font-extrabold tracking-tight md:text-5xl">
       {content.map((value: Content, i: number) => {
-        const characters = value.text.split("")
+        const characters = value.text.split('');
 
         return (
           <div
             key={`content-${i}`}
-            className={cn("flex-initial overflow-hidden text-foreground", {
-              "text-secondary-foreground": value.emphasis,
+            className={cn('flex-initial overflow-hidden text-foreground', {
+              'text-secondary-foreground': value.emphasis,
             })}
           >
             {characters.map((char: string, j: number) => {
-              characterDelay += 0.05
+              characterDelay += 0.05;
 
               return (
                 <motion.div
@@ -44,10 +44,10 @@ export const Typewriter = ({ content }: TypewriterProps) => {
                 >
                   {char}
                 </motion.div>
-              )
+              );
             })}
           </div>
-        )
+        );
       })}
       <motion.span
         className="box-border h-10 border-2 border-secondary-foreground md:h-12"
@@ -56,5 +56,5 @@ export const Typewriter = ({ content }: TypewriterProps) => {
         animate="active"
       ></motion.span>
     </h1>
-  )
-}
+  );
+};
