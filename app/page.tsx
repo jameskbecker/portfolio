@@ -10,7 +10,7 @@ import { MotionSwirlIcon } from '@/components/motion-swirl-icon';
 import { ProjectTabs } from '@/components/project-tabs/ProjectTabs';
 import SkillsAccordion from '@/components/skills-accordion/SkillsAccordion';
 import { SkillsTabs } from '@/components/skills-tabs';
-import { SocialLink } from '@/components/social-link';
+import SocialIcons from '@/components/social-icons/SocialIcons';
 
 export default function IndexPage() {
   return (
@@ -112,33 +112,7 @@ export default function IndexPage() {
               <strong>vision</strong> to <strong>life</strong>!
             </span>
           </h2>
-
-          <div className="grid grid-cols-2 items-center gap-16 md:flex md:flex-row">
-            <SocialLink
-              label="Github"
-              icon={<Icons.github />}
-              href={siteConfig.links.github}
-              delay={0}
-            />
-            <SocialLink
-              label="Discord"
-              icon={<Icons.discord />}
-              href={siteConfig.links.discord}
-              delay={0.25}
-            />
-            <SocialLink
-              label="LinkedIn"
-              icon={<Icons.linkedIn />}
-              href={siteConfig.links.linkedIn}
-              delay={0.5}
-            />
-            <SocialLink
-              label="Email"
-              icon={<Icons.envelope />}
-              href={siteConfig.links.email}
-              delay={0.75}
-            />
-          </div>
+          <SocialIcons />
         </div>
         <Icons.blob className="absolute bottom-0 left-0 hidden lg:inline" />
       </section>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { AspectRatio } from '../ui/aspect-ratio';
+import { Badge } from '../ui/badge';
 import { TabsContent } from '../ui/tabs';
 import { Project } from './ProjectTabs';
 
@@ -22,12 +23,7 @@ const ProjectContent = (project: Project) => {
       </AspectRatio>
       <div className="flex flex-wrap gap-2">
         {project.skills.map((v, i) => (
-          <span
-            key={i}
-            className="select-none rounded-lg border border-primary-foreground bg-primary p-2 text-sm text-primary-foreground"
-          >
-            {v}
-          </span>
+          <Badge key={i}>{v}</Badge>
         ))}
       </div>
       <p className="selection-text-foreground text-muted-foreground selection:bg-secondary">

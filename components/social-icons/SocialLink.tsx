@@ -11,7 +11,7 @@ interface SocialLinkProps {
   delay: number;
 }
 
-export const SocialLink = (props: SocialLinkProps) => {
+const SocialLink = (props: SocialLinkProps) => {
   const ref = useRef(null);
   const inView = useInView(ref);
   const controls = useAnimationControls();
@@ -36,3 +36,5 @@ export const SocialLink = (props: SocialLinkProps) => {
     </motion.a>
   );
 };
+
+export default SocialLink;

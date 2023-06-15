@@ -2,6 +2,8 @@ import kupmImage from '@/public/kupm.png';
 import nftAutoImage from '@/public/nft-automation.png';
 import prosperImage from '@/public/prosperaio.png';
 
+import { Icons } from '@/components/icons';
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -28,10 +30,6 @@ export const siteConfig = {
   ],
   links: {
     heroCta: '#showcase',
-    github: 'https://github.com/jameskbecker',
-    discord: 'https://www.discord.com/users/442333264364175361',
-    linkedIn: 'https://www.linkedin.com/in/jameskbecker/',
-    email: 'mailto:work@jameskbecker.com',
   },
   skills: [
     {
@@ -142,6 +140,28 @@ export const siteConfig = {
         'Electron',
         'Figma',
       ],
+    },
+  ],
+  socials: [
+    {
+      label: 'Github',
+      href: 'https://github.com/jameskbecker',
+      icon: Icons.github,
+    },
+    {
+      label: 'Discord',
+      href: 'https://www.discord.com/users/442333264364175361',
+      icon: Icons.discord,
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/jameskbecker/',
+      icon: Icons.linkedIn,
+    },
+    {
+      label: 'Email',
+      href: 'mailto:work@jameskbecker.com',
+      icon: Icons.envelope,
     },
   ],
 };
