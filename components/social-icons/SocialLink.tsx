@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { waveVariants } from '@/animations/wave';
 import { motion, useAnimationControls, useInView } from 'framer-motion';
+
+import { waveVariants } from './animations';
 
 interface SocialLinkProps {
   label: string;
