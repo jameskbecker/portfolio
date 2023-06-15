@@ -1,9 +1,7 @@
 "use client"
 
-import { useEffect } from "react"
 import { appearVariants } from "@/animations/appear"
-import { liftVariants } from "@/animations/lift"
-import { Variants, motion, useAnimationControls } from "framer-motion"
+import { motion } from "framer-motion"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
