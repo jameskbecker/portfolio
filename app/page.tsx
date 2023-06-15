@@ -29,7 +29,7 @@ export default function IndexPage() {
         <MotionHeading text="About me" />
         <div className="container flex grow flex-col gap-16 lg:flex-row">
           <div className="relative flex-1">
-            <div className="relative h-80 w-full overflow-hidden rounded-2xl border-2 border-purple-400 bg-muted-foreground  md:h-96 lg:h-full">
+            <div className="relative h-80 w-full overflow-hidden rounded-2xl border-2 border-purple-400 bg-[#444444]  md:h-96 lg:h-full">
               <Image
                 placeholder="blur"
                 src={portrait}
