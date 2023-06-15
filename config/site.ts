@@ -36,6 +36,7 @@ export const siteConfig = {
   skills: [
     {
       id: 'frontend',
+      name: 'Frontend',
       data: [
         'React (Native)',
         'Next.js',
@@ -49,10 +50,12 @@ export const siteConfig = {
     },
     {
       id: 'backend',
+      name: 'Backend',
       data: ['Node.js', 'Express.js', 'MySQL', 'MongoDB'],
     },
     {
       id: 'languages',
+      name: 'Languages',
       data: [
         'TypeScript',
         'JavaScript (ES6+)',
@@ -63,6 +66,7 @@ export const siteConfig = {
     },
     {
       id: 'tooling-platforms',
+      name: 'Tooling & Platforms',
       data: [
         'Storybook',
         'Github (Git)',
@@ -77,6 +81,7 @@ export const siteConfig = {
     },
     {
       id: 'collaboration',
+      name: 'Collaboration',
       data: [
         'Slack / Discord',
         'Jira / Linear',
@@ -88,6 +93,7 @@ export const siteConfig = {
     },
     {
       id: 'design',
+      name: 'Design',
       data: ['Figma', 'Adobe XD'],
     },
   ],

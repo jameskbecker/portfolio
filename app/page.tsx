@@ -8,6 +8,7 @@ import { Icons } from '@/components/icons';
 import { MotionHeading } from '@/components/motion-heading';
 import { MotionSwirlIcon } from '@/components/motion-swirl-icon';
 import { ProjectTabs } from '@/components/project-tabs/ProjectTabs';
+import SkillsAccordion from '@/components/skills-accordion/SkillsAccordion';
 import { SkillsTabs } from '@/components/skills-tabs';
 import { SocialLink } from '@/components/social-link';
 
@@ -87,11 +88,12 @@ export default function IndexPage() {
 
       <section
         id="skills"
-        className="relative hidden h-full flex-col items-center justify-center gap-8 self-center pb-8 pt-6 md:flex md:py-10"
+        className="relative flex h-full flex-col items-center justify-center gap-8 self-center pb-8 pt-6 md:py-10"
       >
         <div className="container flex grow flex-col items-center gap-16">
           <MotionHeading text="Technical Skills" />
-          <SkillsTabs />
+          <SkillsTabs className="hidden lg:flex" />
+          <SkillsAccordion className="block lg:hidden" />
         </div>
         <MotionSwirlIcon className="absolute bottom-[-64px] right-0 hidden md:block" />
       </section>

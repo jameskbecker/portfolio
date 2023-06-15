@@ -1,11 +1,21 @@
+import * as TabsPrimitive from '@radix-ui/react-tabs';
+
 import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
-export const SkillsTabs = () => (
+interface SkillsTabsProps {
+  className?: string;
+}
+
+export const SkillsTabs = ({ className }: SkillsTabsProps) => (
   <Tabs
     defaultValue="frontend"
-    className="flex w-full flex-col items-center overflow-hidden"
+    className={cn(
+      'flex w-full flex-col items-center overflow-hidden',
+      className
+    )}
   >
     <TabsList>
       <TabsTrigger value="frontend">Frontend</TabsTrigger>
