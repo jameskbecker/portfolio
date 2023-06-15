@@ -98,7 +98,15 @@ export const siteConfig = {
       name: 'KU Project Manager',
       image: kupmImage,
       description: `A CRUD web application to help students manage their university work. This was made as my final year project as part of my university coursework. It uses React and is written in TypeScript.`,
-      skills: ['React', 'Figma', 'Express.js', 'Typescript', 'MySQL'],
+      skills: [
+        'React',
+        'Redux',
+        'Styled Components',
+        'Figma',
+        'Express.js',
+        'Typescript',
+        'MySQL',
+      ],
     },
     {
       id: 'nft',
