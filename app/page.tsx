@@ -45,13 +45,13 @@ export default function IndexPage() {
 
           <article className="prose flex flex-1 flex-col gap-4 text-xl leading-7 text-neutral-500 selection:bg-primary-foreground selection:text-muted dark:text-neutral-400">
             <p>
-              {`I started my web development journey five years ago when I taught myself to code with the aim of writing automation scripts. From this point onwards I fell in love with programming and the endless possiblities of digital solutions you can build with it. This experience also led me to pursuing a degree in Computer Science.`}
+              {`I began my web development journey five years ago, teaching myself to code with the goal of creating automation scripts. It was during this time that I fell in love with programming, discovering the endless possibilities of building digital solutions. After spending about a year as a self-taught develo per, I decided to pursue a degree in Computer Science.`}
             </p>
             <p>
-              {`By the end of my first year, I found myself working on my first paid project which resulted in a job offer. However, I decided to continue freelancing, as it allowed me to balance work with my university studies where I could become highly skilled at my craft.`}
+              {`By the end of my first year, I found myself working on my very first paid project, which eventually led to a job offer. However, I made the decision to continue freelancing, as it allowed me to strike a balance between work and my university studies, where I could truly master my craft.`}
             </p>
             <p>
-              {`In my final year of university, I specialised in front-end engineering. Most recently I served as a front-end engineer for an early-stage e-commerce start-up where I worked in a small cross-functional team on an enterprise-level codebase.`}
+              {`During my final year at university, I decided to specialise in frontend engineering. Recently, I had the privilege of serving as a frontend engineer for an early-stage e-commerce start-up. I worked closely with a small, cross-functional team on a enterprise-level codebase. My key responsiblities included establishing a scaleable frontend, contributing my ideas to product design and staying close communcation with my team.`}
             </p>
             <p>
               {`My strengths lie in TypeScript, React and related frameworks like NextJS. I
