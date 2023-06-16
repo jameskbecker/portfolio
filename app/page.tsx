@@ -45,7 +45,7 @@ export default function IndexPage() {
 
           <article className="prose flex flex-1 flex-col gap-4 text-xl leading-7 text-neutral-500 selection:bg-primary-foreground selection:text-muted dark:text-neutral-400">
             <p>
-              {`I began my web development journey five years ago, teaching myself to code with the goal of creating automation scripts. It was during this time that I fell in love with programming, discovering the endless possibilities of building digital solutions. After spending about a year as a self-taught develo per, I decided to pursue a degree in Computer Science.`}
+              {`I began my web development journey five years ago, teaching myself to code with the goal of creating automation scripts. It was during this time that I fell in love with programming, discovering the endless possibilities of building digital solutions. After spending about a year as a self-taught developer, I decided to pursue a degree in Computer Science.`}
             </p>
             <p>
               {`By the end of my first year, I found myself working on my very first paid project, which eventually led to a job offer. However, I made the decision to continue freelancing, as it allowed me to strike a balance between work and my university studies, where I could truly master my craft.`}
