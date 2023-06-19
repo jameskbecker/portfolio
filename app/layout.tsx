@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import { SiteHeader } from '@/components/site-header';
+import NavigationBar from '@/components/navigation-bar/NavigationBar';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex h-screen flex-col">
-              <SiteHeader />
+              <NavigationBar />
               <div className="flex-1 flex-col overflow-auto overscroll-contain scroll-smooth">
                 {children}
               </div>

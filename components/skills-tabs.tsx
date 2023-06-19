@@ -28,6 +28,7 @@ export const SkillsTabs = ({ className }: SkillsTabsProps) => (
     <div className="flex w-full flex-1 flex-col items-center justify-start overflow-hidden py-8">
       {siteConfig.skills.map(({ id, data }: any) => (
         <TabsContent
+          key={id}
           value={id}
           className="grid w-full grid-cols-2 gap-16 lg:grid-cols-3"
         >
