@@ -32,7 +32,6 @@ export const ClientImage = (props: ClientImageProps) => {
         fill
         onLoadingComplete={() => {
           setIsLoading(false);
-          console.log('hello');
         }}
         draggable={false}
         className={cn(

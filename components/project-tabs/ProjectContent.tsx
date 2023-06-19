@@ -1,4 +1,4 @@
-import { ClientImage } from '../ClientImage/ClientImage';
+import { ClientImage } from '../client-image/ClientImage';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { Badge } from '../ui/badge';
 import { TabsContent } from '../ui/tabs';

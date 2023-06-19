@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site';
-import { ClientImage } from '@/components/ClientImage/ClientImage';
 import { AboutMe } from '@/components/about-me';
+import { ClientImage } from '@/components/client-image/ClientImage';
 import { HeroIcons } from '@/components/hero-icons';
 import { HeroInfo } from '@/components/hero-info';
 import { Icons } from '@/components/icons';
