@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from '../ui/accordion';
 
-interface SkillsAccordionProps {
+export interface SkillsAccordionProps {
   className?: string;
 }
 

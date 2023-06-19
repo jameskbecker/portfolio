@@ -12,7 +12,7 @@ export type Project = {
   skills: string[];
 };
 
-interface ProjectTabsProps {
+export interface ProjectTabsProps {
   data: Project[];
 }
 

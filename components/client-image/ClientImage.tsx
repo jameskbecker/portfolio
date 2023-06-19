@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 import { Skeleton } from '../ui/skeleton';
 
-interface ClientImageProps {
+export interface ClientImageProps {
   src: string | StaticImageData;
   alt: string;
   className?: string;

@@ -7,7 +7,7 @@ import { ThemeToggle } from '../theme-toggle';
 import { Sheet, SheetContent } from '../ui/sheet';
 import MenuTrigger from './MenuTrigger';
 
-interface MobileMenuProps {
+export interface MobileMenuProps {
   items?: NavItem[];
 }
 

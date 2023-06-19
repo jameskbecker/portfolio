@@ -5,7 +5,7 @@ import { motion, useAnimationControls, useInView } from 'framer-motion';
 
 import { waveVariants } from './animations';
 
-interface SocialLinkProps {
+export interface SocialLinkProps {
   label: string;
   href: string;
   icon: any;

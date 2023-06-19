@@ -6,7 +6,7 @@ import { revealVariants, typingVariants } from './animation';
 
 type Content = { text: string; emphasis?: boolean };
 
-interface TypewriterProps {
+export interface TypewriterProps {
   content: Content[];
   speed?: number;
   delay?: number;

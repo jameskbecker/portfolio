@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { appearVariants } from '@/animations/appear';
 import { motion, useAnimationControls, useInView } from 'framer-motion';
 
-interface MotionHeadingProps {
+export interface MotionHeadingProps {
   text: string;
 }
 
