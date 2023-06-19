@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { ClientImage } from '@/components/ClientImage/ClientImage';
+import { AboutMe } from '@/components/about-me';
 import { HeroIcons } from '@/components/hero-icons';
 import { HeroInfo } from '@/components/hero-info';
 import { Icons } from '@/components/icons';
@@ -38,21 +39,7 @@ export default function IndexPage() {
             <Icons.bean className="absolute bottom-[-32px] left-[-32px] z-20" />
           </div>
 
-          <article className="prose flex flex-1 flex-col gap-4 text-xl leading-7 text-neutral-500 selection:bg-primary-foreground selection:text-muted dark:text-neutral-400">
-            <p>
-              {`I began my web development journey five years ago, teaching myself to code with the goal of creating automation scripts. It was during this time that I fell in love with programming, discovering the endless possibilities of building digital solutions. After spending about a year as a self-taught developer, I decided to pursue a degree in Computer Science.`}
-            </p>
-            <p>
-              {`By the end of my first year, I found myself working on my very first paid project, which eventually led to a job offer. However, I made the decision to continue freelancing, as it allowed me to strike a balance between work and my university studies, where I could truly master my craft.`}
-            </p>
-            <p>
-              {`During my final year at university, I decided to specialise in frontend engineering. Recently, I had the privilege of serving as a frontend engineer for an early-stage e-commerce start-up. I worked closely with a small, cross-functional team on a enterprise-level codebase. My key responsiblities included establishing a scaleable frontend, contributing my ideas to product design and staying close communcation with my team.`}
-            </p>
-            <p>
-              {`My strengths lie in TypeScript, React and related frameworks like NextJS. I
-              also have solid foundations in the more traditional HTML, CSS and JavaScript which I used before transition to TypeScript and React.`}
-            </p>
-          </article>
+          <AboutMe />
         </div>
         <Icons.shine className="absolute right-8 top-12" />
       </section>
