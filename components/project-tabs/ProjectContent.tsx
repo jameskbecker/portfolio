@@ -1,5 +1,4 @@
-import Image from 'next/image';
-
+import { ClientImage } from '../ClientImage/ClientImage';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { Badge } from '../ui/badge';
 import { TabsContent } from '../ui/tabs';
@@ -13,11 +12,9 @@ const ProjectContent = (project: Project) => {
         ratio={16 / 9}
         className="relative flex flex-initial flex-col gap-4 overflow-hidden"
       >
-        <Image
-          placeholder="blur"
+        <ClientImage
           src={project.image}
           alt="Photo of project"
-          fill
           className="h-fill block overflow-hidden object-contain"
         />
       </AspectRatio>

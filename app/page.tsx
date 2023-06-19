@@ -2,6 +2,7 @@ import Image from 'next/image';
 import portrait from '@/public/Becker_James.jpg';
 
 import { siteConfig } from '@/config/site';
+import { ClientImage } from '@/components/ClientImage/ClientImage';
 import { HeroIcons } from '@/components/hero-icons';
 import { HeroInfo } from '@/components/hero-info';
 import { Icons } from '@/components/icons';
@@ -30,16 +31,12 @@ export default function IndexPage() {
         <MotionHeading text="About me" />
         <div className="container flex grow flex-col gap-16 lg:flex-row">
           <div className="relative flex-1">
-            <div className="relative h-96 w-full overflow-hidden rounded-2xl border-2 border-purple-400 bg-[#444444] lg:h-full">
-              <Image
-                placeholder="blur"
-                src={portrait}
-                alt="Photo of James"
-                fill
-                draggable={false}
-                className="select-none border-0 object-cover object-top grayscale md:object-contain md:object-center lg:object-cover lg:object-top"
-              />
-            </div>
+            <ClientImage
+              showBorder
+              src="/Becker_James.jpg"
+              alt="Photo of James"
+              className="object-top grayscale md:object-contain md:object-center lg:object-cover lg:object-top"
+            />
             <Icons.bean className="absolute bottom-[-32px] left-[-32px]" />
           </div>
 
