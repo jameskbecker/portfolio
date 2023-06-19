@@ -33,11 +33,12 @@ export default function IndexPage() {
           <div className="relative flex-1">
             <ClientImage
               showBorder
+              blurredBackground
               src="/Becker_James.jpg"
               alt="Photo of James"
-              className="object-top grayscale md:object-contain md:object-center lg:object-cover lg:object-top"
+              className="object-top grayscale sm:object-contain sm:object-center lg:object-cover lg:object-top"
             />
-            <Icons.bean className="absolute bottom-[-32px] left-[-32px]" />
+            <Icons.bean className="absolute bottom-[-32px] left-[-32px] z-20" />
           </div>
 
           <article className="prose flex flex-1 flex-col gap-4 text-xl leading-7 text-neutral-500 selection:bg-primary-foreground selection:text-muted dark:text-neutral-400">

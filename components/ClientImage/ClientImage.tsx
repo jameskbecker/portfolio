@@ -12,6 +12,7 @@ interface ClientImageProps {
   alt: string;
   className?: string;
   showBorder?: boolean;
+  blurredBackground?: boolean;
 }
 
 export const ClientImage = (props: ClientImageProps) => {
@@ -26,7 +27,6 @@ export const ClientImage = (props: ClientImageProps) => {
     >
       {isLoading && <Skeleton className="h-full w-full rounded-2xl" />}
       <Image
-        // placeholder="blur"
         src={props.src}
         alt={props.alt}
         fill
@@ -35,10 +35,27 @@ export const ClientImage = (props: ClientImageProps) => {
           console.log('hello');
         }}
         draggable={false}
-        className={cn('select-none border-0 object-cover', props.className, {
-          'opacity-0': isLoading,
-        })}
+        className={cn(
+          'z-10 box-border select-none object-cover',
+          props.className,
+          {
+            'opacity-0': isLoading,
+          }
+        )}
       />
+
+      {props.blurredBackground && (
+        <Image
+          src={props.src}
+          alt={props.alt}
+          fill
+          draggable={false}
+          className={cn(
+            props.className,
+            'z-0 box-border select-none overflow-hidden rounded-2xl opacity-75 blur-md sm:object-cover sm:object-center'
+          )}
+        />
+      )}
     </div>
   );
 };
