@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import portrait from '@/public/Becker_James.jpg';
-
 import { siteConfig } from '@/config/site';
 import { ClientImage } from '@/components/ClientImage/ClientImage';
 import { HeroIcons } from '@/components/hero-icons';
