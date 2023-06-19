@@ -24,7 +24,7 @@ export const ClientImage = (props: ClientImageProps) => {
         { 'border-2': props.showBorder, 'border-purple-400': props.showBorder }
       )}
     >
-      {isLoading && <Skeleton className="h-full w-full" />}
+      {isLoading && <Skeleton className="h-full w-full rounded-2xl" />}
       <Image
         // placeholder="blur"
         src={props.src}
