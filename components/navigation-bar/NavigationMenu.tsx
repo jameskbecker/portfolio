@@ -28,7 +28,7 @@ export function NavigationMenu({ items }: MainNavProps) {
                     key={index}
                     href={item.href}
                     className={cn(
-                      'flex items-center text-sm font-medium text-muted-foreground',
+                      'flex items-center text-sm font-medium text-muted-foreground ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
                       item.disabled && 'cursor-not-allowed opacity-80'
                     )}
                   >

@@ -25,7 +25,7 @@ const SocialLink = (props: SocialLinkProps) => {
     <motion.a
       ref={ref}
       href={props.href}
-      className="flex flex-col items-center gap-2 fill-secondary-foreground text-secondary-foreground duration-300"
+      className="flex flex-col items-center gap-2 fill-secondary-foreground text-secondary-foreground ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
       initial="hidden"
       animate={controls}
       whileHover="hover"
