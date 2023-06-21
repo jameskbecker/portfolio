@@ -33,7 +33,7 @@ const MobileMenu = ({ items }: MobileMenuProps) => {
     <Sheet>
       <MenuTrigger />
       <SheetContent
-        size="lg"
+        size="xl"
         className="flex flex-col items-center justify-start"
       >
         {items?.length ? (
