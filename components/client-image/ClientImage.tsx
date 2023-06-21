@@ -5,6 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 
 import { cn } from '@/lib/utils';
 
+import { AspectRatio } from '../ui/aspect-ratio';
 import { Skeleton } from '../ui/skeleton';
 
 export interface ClientImageProps {
@@ -49,6 +50,7 @@ export const ClientImage = (props: ClientImageProps) => {
           alt={props.alt}
           fill
           draggable={false}
+          sizes={'16w'}
           className={cn(
             props.className,
             'z-0 box-border select-none overflow-hidden rounded-2xl opacity-75 blur-md sm:object-cover sm:object-center'
