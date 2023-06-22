@@ -9,10 +9,9 @@ export const revealVariants: Variants = {
 
 export const typingVariants: Variants = {
   active: {
-    opacity: [0, 100, 0],
+    className: ['border-transparent', 'border-secondary-foreground'],
     transition: {
       duration: 0.75,
-      times: [0, 0.45, 1],
       repeat: Infinity,
     },
   },

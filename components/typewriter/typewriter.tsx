@@ -49,12 +49,12 @@ export const Typewriter = ({ content }: TypewriterProps) => {
           </div>
         );
       })}
-      <motion.span
-        className="box-border h-10 border-2 border-secondary-foreground md:h-12"
-        variants={typingVariants}
-        initial="active"
-        animate="active"
-      ></motion.span>
+      <span
+        className="box-border h-10 animate-typing border-2 text-secondary-foreground md:h-12"
+        // variants={typingVariants}
+        // initial="active"
+        // animate="active"
+      ></span>
     </h1>
   );
 };
