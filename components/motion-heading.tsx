@@ -23,6 +23,7 @@ export const MotionHeading = ({ text }: MotionHeadingProps) => {
       initial="hidden"
       animate={controls}
       variants={appearVariants}
+      transition={{ duration: 0.5 }}
       className="py-4 text-5xl font-semibold"
     >
       {text}
