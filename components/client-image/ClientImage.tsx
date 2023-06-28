@@ -19,6 +19,27 @@ export interface ClientImageProps {
 export const ClientImage = (props: ClientImageProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
+  const StyledImage = ({ className, ...rest }: any) => (
+    <Image
+      src={props.src}
+      alt={props.alt}
+      fill
+      onLoadingComplete={() => {
+        setIsLoading(false);
+      }}
+      draggable={false}
+      className={cn(
+        'z-10 box-border select-none object-cover',
+        className,
+        props.className,
+        {
+          'opacity-0': isLoading,
+        }
+      )}
+      {...rest}
+    />
+  );
+
   return (
     <div
       className={cn(
@@ -26,36 +47,11 @@ export const ClientImage = (props: ClientImageProps) => {
         { 'border-2': props.showBorder, 'border-purple-400': props.showBorder }
       )}
     >
-      {isLoading && <Skeleton className="h-full w-full rounded-2xl" />}
-      <Image
-        src={props.src}
-        alt={props.alt}
-        fill
-        onLoadingComplete={() => {
-          setIsLoading(false);
-        }}
-        draggable={false}
-        className={cn(
-          'z-10 box-border select-none object-cover',
-          props.className,
-          {
-            'opacity-0': isLoading,
-          }
-        )}
-      />
+      {isLoading && <Skeleton className="h-full w-full rounded-2xl bg-muted" />}
+      <StyledImage />
 
       {props.blurredBackground && (
-        <Image
-          src={props.src}
-          alt={props.alt}
-          fill
-          draggable={false}
-          sizes={'16w'}
-          className={cn(
-            props.className,
-            'z-0 box-border select-none overflow-hidden rounded-2xl opacity-75 blur-md sm:object-cover sm:object-center'
-          )}
-        />
+        <StyledImage className="z-0 box-border select-none overflow-hidden rounded-2xl opacity-75 blur-md sm:object-cover sm:object-center" />
       )}
     </div>
   );
