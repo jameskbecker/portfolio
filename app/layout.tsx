@@ -44,9 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex h-screen flex-col">
               <NavigationBar />
-              <div className="flex-1 flex-col overflow-auto overscroll-contain scroll-smooth">
-                {children}
-              </div>
+              {children}
             </div>
             <TailwindIndicator />
           </ThemeProvider>
