@@ -1,7 +1,7 @@
-import { AboutMe } from '../about-me';
+import AboutMe from '../AboutMe';
+import { MotionHeading } from '../MotionHeading';
 import { ClientImage } from '../client-image/ClientImage';
 import { Icons } from '../icons';
-import { MotionHeading } from '../motion-heading';
 
 const AboutSection = () => (
   <section

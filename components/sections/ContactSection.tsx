@@ -1,5 +1,5 @@
+import { MotionHeading } from '../MotionHeading';
 import { Icons } from '../icons';
-import { MotionHeading } from '../motion-heading';
 import SocialIcons from '../social-icons/SocialIcons';
 
 export const ContactSection = () => (

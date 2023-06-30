@@ -1,5 +1,5 @@
-import { HeroIcon } from '../hero-icon';
-import { HeroInfo } from '../hero-info';
+import HeroIcon from '../HeroIcon';
+import HeroInfo from '../HeroInfo';
 import { Icons } from '../icons';
 
 const HeroSection = () => (

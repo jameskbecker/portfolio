@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
-import { Typewriter } from './typewriter/typewriter';
+import { Typewriter } from './typewriter/Typewriter';
 import { buttonVariants } from './ui/button';
 
-export const HeroInfo = () => {
+const HeroInfo = () => {
   return (
     <div className="container flex h-full select-none flex-col items-center justify-center gap-8 self-center overflow-hidden text-center">
       <motion.p
@@ -55,3 +55,5 @@ export const HeroInfo = () => {
     </div>
   );
 };
+
+export default HeroInfo;

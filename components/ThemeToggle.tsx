@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
 
-export function ThemeToggle() {
+const ThemeToggle = () => {
   const { setTheme, theme } = useTheme();
 
   return (
@@ -20,4 +20,6 @@ export function ThemeToggle() {
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
-}
+};
+
+export default ThemeToggle;

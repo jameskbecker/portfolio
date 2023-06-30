@@ -5,15 +5,13 @@ import { motion } from 'framer-motion';
 
 import { cn } from '@/lib/utils';
 
-import { Icons } from './icons';
-
 export interface WrapperProps {
   icon: JSX.Element;
   direction?: SlideDirection;
   className?: string;
 }
 
-export const HeroIcon = ({ icon, direction, className }: WrapperProps) => (
+const HeroIcon = ({ icon, direction, className }: WrapperProps) => (
   <motion.div
     className={cn('absolute opacity-0', className)}
     initial="hidden"
@@ -23,3 +21,5 @@ export const HeroIcon = ({ icon, direction, className }: WrapperProps) => (
     {icon}
   </motion.div>
 );
+
+export default HeroIcon;

@@ -293,5 +293,3 @@ export const Icons = {
     </svg>
   ),
 };
-
-export const ClientIcons = {};

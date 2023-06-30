@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site';
 
-import { ThemeToggle } from '../theme-toggle';
+import ThemeToggle from '../ThemeToggle';
 import MobileMenu from './MobileMenu';
 import { NavigationMenu } from './NavigationMenu';
 

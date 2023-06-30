@@ -1,7 +1,7 @@
 import { siteConfig } from '@/config/site';
 
+import { MotionHeading } from '../MotionHeading';
 import { Icons } from '../icons';
-import { MotionHeading } from '../motion-heading';
 import { ProjectTabs } from '../project-tabs/ProjectTabs';
 
 const ShowcaseSection = () => (

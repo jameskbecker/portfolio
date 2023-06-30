@@ -1,7 +1,7 @@
-import { MotionHeading } from '../motion-heading';
-import { MotionSwirlIcon } from '../motion-swirl-icon';
+import { MotionHeading } from '../MotionHeading';
+import { MotionSwirlIcon } from '../MotionSwirlIcon';
+import { SkillsTabs } from '../SkillsTabs';
 import SkillsAccordion from '../skills-accordion/SkillsAccordion';
-import { SkillsTabs } from '../skills-tabs';
 
 const SkillsSection = () => (
   <section

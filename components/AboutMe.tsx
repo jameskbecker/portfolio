@@ -1,4 +1,4 @@
-export const AboutMe = () => (
+const AboutMe = () => (
   <article className="prose flex flex-1 flex-col gap-4 text-xl leading-7 text-neutral-500 selection:bg-primary-foreground selection:text-muted dark:text-neutral-400">
     <p>
       I began my web development journey five years ago, teaching myself to code
@@ -32,3 +32,5 @@ export const AboutMe = () => (
     </p>
   </article>
 );
+
+export default AboutMe;
