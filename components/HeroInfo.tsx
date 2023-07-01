@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
-import { Typewriter } from './typewriter/Typewriter';
+import Typewriter from './typewriter/Typewriter';
 import { buttonVariants } from './ui/button';
 
 const HeroInfo = () => {

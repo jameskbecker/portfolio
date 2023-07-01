@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import { cn } from '@/lib/utils';
 
-import { revealVariants, typingVariants } from './animation';
+import { revealVariants } from './animation';
 
 type Content = { text: string; emphasis?: boolean };
 
@@ -12,7 +12,7 @@ export interface TypewriterProps {
   delay?: number;
 }
 
-export const Typewriter = ({ content }: TypewriterProps) => {
+const Typewriter = ({ content }: TypewriterProps) => {
   let characterDelay = 0;
 
   return (
@@ -58,3 +58,5 @@ export const Typewriter = ({ content }: TypewriterProps) => {
     </h1>
   );
 };
+
+export default Typewriter;
