@@ -1,4 +1,6 @@
-import AboutMe from '../AboutMe';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+
+import aboutMe from '../../content/about-me';
 import { MotionHeading } from '../MotionHeading';
 import { ClientImage } from '../client-image/ClientImage';
 import { Icons } from '../icons';
@@ -6,7 +8,7 @@ import { Icons } from '../icons';
 const AboutSection = () => (
   <section
     id="about"
-    className="min-h-fill relative flex flex-col items-center gap-8 self-center pb-8 pt-6 lg:py-10"
+    className="relative flex h-full flex-col items-center gap-8 self-center pb-8 pt-6 lg:py-10"
   >
     <MotionHeading text="About me" />
     <div className="container flex grow flex-col gap-16 lg:flex-row">
@@ -21,7 +23,9 @@ const AboutSection = () => (
         <Icons.bean className="absolute bottom-[-32px] left-[-32px] z-20" />
       </div>
 
-      <AboutMe />
+      <ReactMarkdown className='className="flex gap-4> flex-1 flex-col whitespace-pre-wrap'>
+        {aboutMe}
+      </ReactMarkdown>
     </div>
     <Icons.shine className="absolute right-8 top-12" />
   </section>

@@ -3,7 +3,7 @@
 import { NavItem } from '@/types/nav';
 import { cn } from '@/lib/utils';
 
-import { ThemeToggle } from '../ThemeToggle';
+import ThemeToggle from '../ThemeToggle';
 import { Sheet, SheetContent } from '../ui/sheet';
 import MenuTrigger from './MenuTrigger';
 
