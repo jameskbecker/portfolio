@@ -8,7 +8,7 @@ import { Icons } from '../icons';
 const AboutSection = () => (
   <section
     id="about"
-    className="relative flex h-full flex-col items-center gap-8 self-center pb-8 pt-6 lg:py-10"
+    className="relative flex min-h-full flex-col items-center gap-8 self-center pb-8 pt-6 lg:py-10"
   >
     <MotionHeading text="About me" />
     <div className="container flex grow flex-col gap-16 lg:flex-row">
