@@ -23,7 +23,7 @@ export function NavigationMenu({ items }: MainNavProps) {
           {items?.map(
             (item, index) =>
               item.href && (
-                <li>
+                <li key={index}>
                   <a
                     key={index}
                     href={item.href}
