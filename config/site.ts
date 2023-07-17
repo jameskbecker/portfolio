@@ -27,6 +27,10 @@ export const siteConfig = {
       title: 'Contact',
       href: '/#contact',
     },
+    {
+      title: 'Resume',
+      href: '/CV_JamesKBecker.pdf',
+    },
   ],
   links: {
     heroCta: '#showcase',
